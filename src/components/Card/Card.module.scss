@@ -1,0 +1,25 @@
+.card {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  background-color: var(--hsla);
+  padding: 8px;
+  border-radius: var(--border-radius-medium);
+
+  &__info {
+    display: grid;
+    gap: 8px;
+  }
+
+  &__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--border-radius-small);
+  }
+
+  &__link {
+    display: inline-flex;
+    max-width: max-content;
+  }
+}

@@ -1,0 +1,13 @@
+.search {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-medium);
+  min-height: 42px;
+  width: 100%;
+  padding: 8px 16px;
+  background-color: var(--transparent);
+  color: var(--primary-color);
+
+  &::placeholder {
+    color: var(--neutral-color);
+  }
+}

@@ -1,0 +1,83 @@
+:root {
+  --backdrop-filter: saturate(180%) blur(5px);
+  --main-bg: #101010;
+  --secondary-bg: #000000;
+  --neutral-bg: #1a1a1a;
+  --primary-color: #ffffff;
+  --secondary-color: #a1a1a1;
+  --neutral-color: #8a8a8a;
+  --border-color: #323232;
+  --border-radius-medium: 6px;
+  --border-radius-small: 3px;
+  --transparent: transparent;
+  --box-shadow: hsla(0, 0%, 100%, .25);
+  --transition-property: .20s ease-out;
+  --hsla: hsla(0, 0%, 100%, .08);
+}
+
+[data-theme='light'] {
+  --backdrop-filter: saturate(180%) blur(5px);
+  --main-bg: #fafafa;
+  --secondary-bg: #ffffff;
+  --neutral-bg: #f2f2f2;
+  --primary-color: #000000;
+  --secondary-color: #666666;
+  --neutral-color: #8f8f8f;
+  --border-color: #d7d7d7;
+  --border-radius-medium: 6px;
+  --border-radius-small: 3px;
+  --transparent: transparent;
+  --box-shadow: hsla(0, 0%, 0%, 0.15);
+  --transition-property: .20s ease-out;
+  --hsla: hsla(0, 0%, 0%, .04);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 32px;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--primary-color);
+  background: var(--main-bg);
+  width: 100%;
+  max-width: 1168px;
+  padding: 0 16px;
+  max-width: 1162px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

@@ -1,0 +1,11 @@
+.home {
+  height: 100%;
+  display: grid;
+  gap: 24px;
+  align-content: start;
+
+  &__cards {
+    display: grid;
+    gap: 16px;
+  }
+}
