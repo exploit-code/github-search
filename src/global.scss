@@ -11,8 +11,8 @@
   --border-radius-small: 3px;
   --transparent: transparent;
   --box-shadow: hsla(0, 0%, 100%, .25);
-  --transition-property: .20s ease-out;
-  --hsla: hsla(0, 0%, 100%, .08);
+  --transition-property: .2s ease-out;
+  --hsla: hsla(0, 0%, 100%, .05);
 }
 
 [data-theme='light'] {
@@ -29,7 +29,7 @@
   --transparent: transparent;
   --box-shadow: hsla(0, 0%, 0%, 0.15);
   --transition-property: .20s ease-out;
-  --hsla: hsla(0, 0%, 0%, .04);
+  --hsla: hsla(0, 0%, 0%, .05);
 }
 
 * {

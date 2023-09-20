@@ -7,15 +7,12 @@
   border-radius: var(--border-radius-medium);
   padding: 4px;
   width: fit-content;
-  min-height: 42px;
 
-  &__btn {
+  &__link {
     width: 32px;
     height: 32px;
     background-color: var(--neutral-bg);
-    border: none;
     border-radius: var(--border-radius-small);
-    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,5 +22,11 @@
     &:hover {
       color: var(--primary-color);
     }
+  }
+
+  &__icon {
+    stroke: inherit;
+    width: 24px;
+    height: 24px;
   }
 }

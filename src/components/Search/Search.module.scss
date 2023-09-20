@@ -6,6 +6,8 @@
   padding: 8px 16px;
   background-color: var(--transparent);
   color: var(--primary-color);
+  font-size: 16px;
+  font-weight: normal;
 
   &::placeholder {
     color: var(--neutral-color);

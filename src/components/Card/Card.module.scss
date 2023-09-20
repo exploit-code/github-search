@@ -1,7 +1,7 @@
 .card {
   display: grid;
   gap: 16px;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: max-content 1fr;
   align-items: center;
   background-color: var(--hsla);
   padding: 8px;
@@ -9,17 +9,77 @@
 
   &__info {
     display: grid;
+    align-content: center;
     gap: 8px;
+    height: 100%;
   }
 
   &__avatar {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
     border-radius: var(--border-radius-small);
   }
 
-  &__link {
+  &__head {
     display: inline-flex;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__type {
+    width: 28px;
+    height: 28px;
+    border-radius: var(--border-radius-medium);
+    background-color: var(--neutral-bg);
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_icon {
+      stroke: var(--neutral-color);
+    }
+  }
+
+  &__login {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--primary-color);
+    hyphens: auto;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
     max-width: max-content;
+    padding: 4px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-medium);
+    background-color: var(--neutral-bg);
+    color: var(--neutral-color);
+    transition: color var(--transition-property), border-color var(--transition-property);
+
+    &_text {
+      color: inherit;
+    }
+
+    &_icon {
+      stroke: inherit;
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      color: var(--secondary-color);
+      border-color: var(--neutral-color);
+    }
   }
 }
