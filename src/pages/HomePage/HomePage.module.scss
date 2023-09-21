@@ -14,4 +14,10 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
+
+  @media screen and (min-width: 1280px) {
+    &__cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }

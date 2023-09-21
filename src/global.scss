@@ -1,5 +1,4 @@
 :root {
-  --backdrop-filter: saturate(180%) blur(5px);
   --main-bg: #101010;
   --secondary-bg: #000000;
   --neutral-bg: #1a1a1a;
@@ -13,23 +12,6 @@
   --box-shadow: hsla(0, 0%, 100%, .25);
   --transition-property: .2s ease-out;
   --hsla: hsla(0, 0%, 100%, .05);
-}
-
-[data-theme='light'] {
-  --backdrop-filter: saturate(180%) blur(5px);
-  --main-bg: #fafafa;
-  --secondary-bg: #ffffff;
-  --neutral-bg: #f2f2f2;
-  --primary-color: #000000;
-  --secondary-color: #666666;
-  --neutral-color: #8f8f8f;
-  --border-color: #d7d7d7;
-  --border-radius-medium: 6px;
-  --border-radius-small: 3px;
-  --transparent: transparent;
-  --box-shadow: hsla(0, 0%, 0%, 0.15);
-  --transition-property: .20s ease-out;
-  --hsla: hsla(0, 0%, 0%, .05);
 }
 
 * {
