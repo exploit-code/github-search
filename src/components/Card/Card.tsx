@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./Card.module.scss";
 import { IUserCard } from "../../models/models";
 
-const Card = ({ login, html_url, avatar_url, type }: IUserCard) => {
+export const Card = ({ login, html_url, avatar_url, type }: IUserCard) => {
   return (
     <div className={styles.card}>
       <img className={styles.card__avatar} src={avatar_url} alt="avatar" />
@@ -75,5 +75,3 @@ const Card = ({ login, html_url, avatar_url, type }: IUserCard) => {
     </div>
   );
 };
-
-export default Card;

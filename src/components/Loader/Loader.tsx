@@ -1,4 +1,4 @@
-const Loader = () => {
+export const Loader = () => {
   return (
     <svg version="1.1" id="L5" x="0px" y="0px" viewBox="0 0 100 100" width="50px" height="50px" enableBackground="new 0 0 0 0">
       <circle fill="currentColor" stroke="none" cx="6" cy="50" r="6">
@@ -13,5 +13,3 @@ const Loader = () => {
     </svg>
   );
 };
-
-export default Loader;

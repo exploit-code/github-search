@@ -1,7 +1,7 @@
-import SocNet from "../SocNet/SocNet";
+import { SocNet } from "../SocNet/SocNet";
 import styles from "./Footer.module.scss";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__content}>
@@ -11,5 +11,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

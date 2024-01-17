@@ -1,11 +1,11 @@
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
+import { Footer } from "../Footer/Footer";
+import { Header } from "../Header/Header";
 
 type Props = {
   children: JSX.Element;
 };
 
-const Layout = ({ children }: Props) => {
+export const Layout = ({ children }: Props) => {
   return (
     <>
       <Header />
@@ -14,5 +14,3 @@ const Layout = ({ children }: Props) => {
     </>
   );
 };
-
-export default Layout;
